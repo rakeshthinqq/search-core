@@ -24,14 +24,27 @@ When you're done, check out the [submission guidelines](#submitting).
 
 Best of luck!
 
-### Basic Requirements
+### Requirements
 
 - Create a GIF search API that leverages the [Giphy API](https://github.com/giphy/GiphyAPI)
-  - Should use their public beta key
-  - Should an http endpoint with the path
-    - `/v1/gifs/search`
+- Use the Giphy public beta key
+- Your HTTP endpoint should have the path `/search/[search term]`
+- Always return exactly 5 results or 0 if there are less than 5 available
+- Responses should be JSON in the following format:
+ 
+    {
 
-### Features/Enhancements (choose 2)
+        data: [
+            {
+        		  	gif_id: "FiGiRei2ICzzG",
+        				url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
+            }
+        ]
+    }
+				
+
+
+### Advanced Features (pick one)
 - 
 
 ## Coding
