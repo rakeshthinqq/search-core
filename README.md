@@ -32,24 +32,40 @@ Best of luck!
 - Always return exactly 5 results or 0 if there are less than 5 available
 - Responses should be JSON in the following format:
  
-    {
-
-        data: [
-            {
-        		  	gif_id: "FiGiRei2ICzzG",
-        				url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
-            }
-        ]
-    }
+	    {
+	        data: [
+	            {
+				  	gif_id: "FiGiRei2ICzzG",
+					url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
+	            }
+	        ]
+	    }
 				
 
 
 ### Advanced Features (pick one)
-- 
+- Add a url parameter `p` that specifies the maximum number of bytes in the JSON response
+  - A sample request url would like like this: `http://your-server/search/funny+cat?p=2048`
+  - If including 5 results would exceed the byte limit, then reduce the number of results so that the response can fit within that limit
+  - It's ok to go below the 5 result requirement from above and have 1-4 results
+  - If results exist but don't fit within the limit, then return a 500 error
+- Add a pagination token to your response in the following format:
+ 
+	    {
+	        data: [
+	            {
+				  	gif_id: "FiGiRei2ICzzG",
+					url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
+	            }
+	        ],
+		next: "your-pagination-token"
+	    }
+  - Add a url paramter `next` for the pagination token to go to the next set of 5 results
+  - You should be able to use the latest pagination token from each response to paginate through all of the results 
 
 ## Coding
 
-1. Clone this repo and commit your code here
+1. Clone this repo and commit your code as you work
 
 ## Submitting
 
@@ -59,6 +75,13 @@ When you are satisfied with your work, follow these instructions to submit:
     Or, if you worked straight off of master, use the commit sha preceding
     your work.
 2. Email the patch to [recruiting+challenge-back-end@clara.com](mailto:recruiting+challenge-back-end@clara.com).
+
+## Evaluation
+
+We're going to be evaluating your project on the following criteria
+  - How well did you meet all of the requirements?
+  - How easy is it for someone new to understand your code?
+  - How well are you using the tools and technologies in the language and framework of your choice?
 
 ## Feedback
 
