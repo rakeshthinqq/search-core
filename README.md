@@ -7,7 +7,7 @@ Welcome! This challenge is designed to give us a better idea of how you work
 on a back-end project. We've found project-based challenges like this are
 often more accurate than traditional coding interviews.
 
-You should **expect to spend 2 hours on this challenge**.
+You should **expect to spend 3 hours on this challenge**.
 
 ## The Challenge
 
@@ -24,11 +24,12 @@ When you're done, check out the [submission guidelines](#submitting).
 
 Best of luck!
 
-### Requirements
+### Requirements - PART 1
 
-- Create a GIF search API that leverages the [Giphy API](https://github.com/giphy/GiphyAPI)
-- Use the Giphy public beta key
-- Your HTTP endpoint should have the path `/search/[search term]`
+- Create a GIF search web service
+- It should have an HTTP GET API with the path `/search/[search term]`
+- It should run on port 8080
+- Leverage the [Giphy API](https://github.com/giphy/GiphyAPI) and use the Giphy public beta key
 - Always return exactly 5 results or 0 if there are less than 5 available
 - Responses should be JSON in the following format:
  
@@ -43,7 +44,7 @@ Best of luck!
 				
 
 
-### Advanced Features (pick one)
+### Requirements - PART 2: Pick one of these two advanced features
 - Add a url parameter `p` that specifies the maximum number of bytes in the JSON response
   - A sample request url would like like this: `http://your-server/search/funny+cat?p=2048`
   - If including 5 results would exceed the byte limit, then reduce the number of results so that the response can fit within that limit
@@ -63,6 +64,14 @@ Best of luck!
   - Add a url paramter `next` for the pagination token to go to the next set of 5 results
   - You should be able to use the latest pagination token from each response to paginate through all of the results 
 
+### Requirements - PART 3
+- For this section, we recommend you take advantage of the Ubuntu server that we provided you
+- Complete the install.sh and start.sh scripts
+- install.sh should do all the preparation for your project to run, such as downloading any dependencies and compiling if necessary
+- start.sh should start up your service 
+- After we run start.sh, your service should be able to repond to API requests 
+- These scripts should be able to run on any machine as long as they have exactly the same version of Ubuntu that we provided you with the same level of access
+
 ## Coding
 
 1. Clone this repo and commit your code as you work
@@ -78,8 +87,9 @@ When you are satisfied with your work, follow these instructions to submit:
 
 ## Evaluation
 
-We're going to be evaluating your project on the following criteria
-  - How well did you meet all of the requirements?
+- We will test 
+- We're going to be evaluating your project on the following criteria
+  - Did you meet all of the requirements?
   - How easy is it for someone new to understand your code?
   - How well are you using the tools and technologies in the language and framework of your choice?
 
