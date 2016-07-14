@@ -17,7 +17,7 @@ is really the most important metric so we've decided to build an internal portal
 for sharing GIF collections! It's like... Pinterest for GIFs?
 Well.. you get the idea.
 
-Your quest is to complete the **Three Requirements Sections** from the list below.
+Your quest is to complete the **Three Requirements Sections** below.
 
 When you're done, check out the [submission guidelines](#submitting).
 
@@ -29,7 +29,7 @@ Best of luck!
 - It should have an HTTP GET API with the path `/search/[search term]`
 - It should run on port 8080
 - Leverage the [Giphy API](https://github.com/giphy/GiphyAPI) and use the Giphy public beta key
-- Always return exactly 5 results or 0 if there are less than 5 available
+- Always return exactly 5 results or 0 results if there are less than 5 available
 - Responses should be JSON in the following format:
  
 	    {
