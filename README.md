@@ -17,8 +17,7 @@ is really the most important metric so we've decided to build an internal portal
 for sharing GIF collections! It's like... Pinterest for GIFs?
 Well.. you get the idea.
 
-Your quest is to complete the **Basic Requirements** and
-your choice of **2 Features/Enhancements** from the list below.
+Your quest is to complete the **Three Requirements Sections** from the list below.
 
 When you're done, check out the [submission guidelines](#submitting).
 
@@ -62,6 +61,7 @@ Best of luck!
 		next: "your-pagination-token"
 	    }
   - Add a url paramter `next` for the pagination token to go to the next set of 5 results
+  - A sample request url would like like this: `http://your-server/search/funny+cat?next=your-pagination-token`
   - You should be able to use the latest pagination token from each response to paginate through all of the results 
 
 ### Requirements - PART 3
@@ -72,26 +72,21 @@ Best of luck!
 - After we run start.sh, your service should be able to repond to API requests 
 - These scripts should be able to run on any machine as long as they have exactly the same version of Ubuntu that we provided you with the same level of access
 
-## Coding
-
-1. Clone this repo and commit your code as you work
-
 ## Submitting
 
-When you are satisfied with your work, follow these instructions to submit:
-
-1. `git format-patch master --stdout > your-name.patch`.
+1. Clone this repo and commit your code as you work. When you are satisfied with your work, follow these instructions to submit:
+2. `git format-patch master --stdout > your-name.patch`.
     Or, if you worked straight off of master, use the commit sha preceding
     your work.
-2. Email the patch to [recruiting+challenge-back-end@clara.com](mailto:recruiting+challenge-back-end@clara.com).
+3. Email the patch to [recruiting+challenge-back-end@clara.com](mailto:recruiting+challenge-back-end@clara.com).
 
 ## Evaluation
 
-- We will test 
+- We will test your project on exactly the same version of Ubuntu that we provided you with the same level of access
 - We're going to be evaluating your project on the following criteria
   - Did you meet all of the requirements?
-  - How easy is it for someone new to understand your code?
-  - How well are you using the tools and technologies in the language and framework of your choice?
+  - How easy is it for someone new to your project to understand your code?
+  - How well are you using the technology ecosystem of your choice?
 
 ## Feedback
 
