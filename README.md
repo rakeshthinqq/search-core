@@ -1,4 +1,4 @@
-Expedite Backend Challenge
+Clara Backend Challenge
 ============================
 
 ## Intro
