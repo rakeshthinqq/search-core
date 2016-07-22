@@ -32,16 +32,16 @@ Best of luck!
 - Always return exactly 5 results or 0 results if there are less than 5 available
 - Responses should be JSON in the following format:
  
-	    {
-	        data: [
-	            {
-				  	gif_id: "FiGiRei2ICzzG",
-					url: "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
-	            }
-	        ]
-	    }
-				
-
+```json
+{
+  "data": [
+    {
+      "gif_id": "FiGiRei2ICzzG",
+      "url": "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
+    }
+  ]
+}
+```
 
 ### Requirements - PART 2
 - For this section, we recommend you take advantage of the Ubuntu server that we provided you
