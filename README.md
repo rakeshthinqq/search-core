@@ -7,7 +7,7 @@ Welcome! This challenge is designed to give us a better idea of how you work
 on a back-end project. We've found project-based challenges like this are
 often more accurate than traditional coding interviews.
 
-You should **expect to spend 2 to 4 hours on this challenge** depending on how familiar you are with your project setup.
+You're free to take as much time as you like, but you should **expect to spend 2 to 4 hours on this challenge** depending on how familiar you are with your project setup.
 
 ## The Challenge
 
