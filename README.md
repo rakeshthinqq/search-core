@@ -21,6 +21,8 @@ Your quest is to complete the **two requirements sections** below.
 
 When you're done, check out the [submission guidelines](#submitting).
 
+When you come for the onsite interview, you will get to extend your submission with a new feature, so keep that in mind when you're working on it.
+
 Best of luck!
 
 ### Requirements - PART 1
