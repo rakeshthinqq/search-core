@@ -64,6 +64,7 @@ Best of luck!
 ## Evaluation
 
 - We will test your project on exactly the same version of Ubuntu that we provided you with the same level of access
+  - Be sure to set a strong password on the VM. Getting your VM compromised by hackers won't look good!
 - We're going to be evaluating your project on the following criteria
   - Did you meet all of the requirements?
   - How easy is it for someone new to your project to understand your code?
