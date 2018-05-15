@@ -1,4 +1,4 @@
-Clara Backend Challenge
+SoFi Backend Challenge
 ============================
 
 ## Intro
@@ -11,7 +11,7 @@ You're free to take as much time as you like, but you should **expect to spend 2
 
 ## The Challenge
 
-At Clara, we've decided to build some internal "portals" that make our
+At Sofi, we've decided to build some internal "portals" that make our
 mortgage staff more effective. Lately, we realized that GIFs shared per hour
 is really the most important metric so we've decided to build an internal portal
 for sharing GIF collections! It's like... Pinterest for GIFs?
@@ -33,7 +33,7 @@ Best of luck!
 - Leverage the [Giphy API](https://github.com/giphy/GiphyAPI) and use the Giphy public beta key
 - Always return exactly 5 results or 0 results if there are less than 5 available
 - Responses should be JSON in the following format:
- 
+
 ```json
 {
   "data": [
@@ -49,8 +49,8 @@ Best of luck!
 - For this section, we recommend you take advantage of the Ubuntu server that we provided you
 - Complete the install.sh and start.sh scripts
 - install.sh should do all the preparation for your project to run, such as downloading any dependencies and compiling if necessary
-- start.sh should start up your service 
-- After we run start.sh, your service should be able to repond to API requests 
+- start.sh should start up your service
+- After we run start.sh, your service should be able to repond to API requests
 - These scripts should be able to run on any machine as long as they have exactly the same version of Ubuntu that we provided you with the same level of access
 
 ## Submitting
@@ -59,7 +59,7 @@ Best of luck!
 2. `git format-patch master --stdout > your-name.patch`.
     Or, if you worked straight off of master, use the commit sha preceding
     your work.
-3. Email the patch to [recruiting+challenge-back-end@clara.com](mailto:recruiting+challenge-back-end@clara.com).
+3. Email the patch to [klochner@sofi.com](mailto:klochner@sofi.com).
 
 ## Evaluation
 
@@ -72,5 +72,5 @@ Best of luck!
 
 ## Feedback
 
-We're always looking for ways to improve our processes at Clara so
+We're always looking for ways to improve our processes at Sofi so
 let us know if anything is especially frustrating (or fun)!
