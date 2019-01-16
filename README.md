@@ -46,12 +46,9 @@ Best of luck!
 ```
 
 ### Requirements - PART 2
-- For this section, we recommend you take advantage of the Ubuntu server that we provided you
-- Complete the install.sh and start.sh scripts
-- install.sh should do all the preparation for your project to run, such as downloading any dependencies and compiling if necessary
-- start.sh should start up your service
-- After we run start.sh, your service should be able to repond to API requests
-- These scripts should be able to run on any machine as long as they have exactly the same version of Ubuntu that we provided you with the same level of access
+- For this section, dockerize your application.
+  - Complete Dockerfile
+  - After we bring up the docker container, your service should be able to repond to API requests.
 
 ## Submitting
 
@@ -63,12 +60,12 @@ Best of luck!
 
 ## Evaluation
 
-- We will test your project on exactly the same version of Ubuntu that we provided you with the same level of access
-  - Be sure to set a strong password on the VM. Getting your VM compromised by hackers won't look good!
 - We're going to be evaluating your project on the following criteria
   - Did you meet all of the requirements?
+  - Can we run the application as a docker container?
   - How easy is it for someone new to your project to understand your code?
   - How well are you using the technology ecosystem of your choice?
+  - We will review design decisions, the application structure, SOLID principles, clean code, any technologies or frameworks used.
 
 ## Feedback
 
