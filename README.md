@@ -48,7 +48,7 @@ Best of luck!
 ### Requirements - PART 2
 - For this section, dockerize your application.
   - Complete Dockerfile
-  - After we bring up the docker container, your service should be able to repond to API requests.
+  - After we build your dockerfile and run the image, your service should be able to repond to API requests.
 
 ## Submitting
 
