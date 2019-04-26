@@ -50,8 +50,13 @@ public class GifSearchService implements GifSearch {
 
 
         logger.debug("Giphy api result:{}", giphyResponse);
-        List<GiphyDto> giphyDtos = giphyResponse.getData();
 
-        return  GiphyDataTransfer.convertGiphyToGif(giphyDtos);
+        if(giphyResponse == null) {
+            return null;
+        } else {
+            List<GiphyDto> giphyDtos = giphyResponse.getData();
+            return  GiphyDataTransfer.convertGiphyToGif(giphyDtos);
+        }
+
     }
 }
