@@ -41,4 +41,12 @@ public class Gif {
     public int hashCode() {
         return Objects.hash(gif_id, url);
     }
+
+    @Override
+    public String toString() {
+        return "Gif{" +
+                "gif_id='" + gif_id + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }
