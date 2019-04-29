@@ -1,7 +1,7 @@
 ### Tasks
-    
-2) Create TestND Testcases
-3) Create API gateway <> Circuit Breaker 
+ 
+
+9) De duplication of solr documents
 
 
 
@@ -14,9 +14,14 @@
         docker build -t search-api:latest .
         
         docker run -p 8080:8080 search-api
+        
+4) Hystrix command to implement circuit breaker 
+5) add unite test
+6) Integration test
+7) Exception handling, error in response 
+8) Local indexing in Solr and push giphy response through kafka     
 
 
 ### Future
-
-3) Cache API response
+3) Cache 
 4) Rank search terms
