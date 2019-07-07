@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PayloadPublisher {
 
-    @Value("${kafka.giphy_payload}")
+    @Value("${spring.kafka.giphy_topic}")
     String giphyPayloadTopic;
 
     private final KafkaProducer producer;
@@ -29,8 +29,10 @@ public class PayloadPublisher {
     @Async
     @SuppressWarnings("unused")
     public void publish(GiphyResponse giphyResponse) {
-        logger.debug("publishing message to kafka for indexing");
-        producer.sendMessage(DataTransferUtil.convertGiphyResponse(giphyResponse), giphyPayloadTopic);
+        String pubMessage = DataTransferUtil.convertGiphyResponse(giphyResponse);
+        logger.debug("publishing message to kafka for indexing- message:{}", pubMessage);
+
+        producer.sendMessage(pubMessage, giphyPayloadTopic);
         logger.info("published message to kafka");
     }
 }

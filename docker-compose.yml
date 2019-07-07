@@ -1,0 +1,38 @@
+version: '2'
+services:
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+#      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+    depends_on:
+      - zookeeper
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      - KAFKA_ADVERTISED_HOST_NAME=zookeeper
+
+  solr-standalone:
+    image: solr
+    hostname: solr
+    ports:
+      - "8983:8983"
+    volumes:
+      - "./src/test/solr/solrcloud:/config/solrcloud"
+
+  search_service:
+    build: .
+    ports:
+      - "8080:8080"
+    restart: always
+    command: mvn clean -DskipTests install spring-boot:run
+    depends_on:
+      - kafka
+      - solr-standalone

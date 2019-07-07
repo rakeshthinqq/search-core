@@ -1,0 +1,53 @@
+logging:
+  level:
+    .: error
+    org.springframework: ERROR
+    com.searchapp: DEBUG
+
+spring:
+  profiles:
+    active: "dev"
+  main:
+    banner-mode: "off"
+
+---
+
+spring:
+  profiles: dev
+  kafka:
+    giphy_topic: giphy_payload
+    bootstrap-servers: kafka:9092
+    consumer:
+      bootstrap-servers: kafka:9092
+      #      bootstrap-servers: localhost:9092
+      group-id: indexing_consumer
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: kafka:9092
+#      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+server:
+  port: 8080
+
+giphy:
+  api:
+    url: https://api.giphy.com/v1/gifs/search?api_key=%s&q=%s&limit=%s
+    key: tGcvtq0BC0KuAh6XAmCaer5GwBEvbfht
+    record-count: 5
+    connection-timeout: 3000
+    read-timeout: 6000
+
+solr:
+  url: http://localhost:8983/solr/gettingstarted
+  connection-timeout: 10000
+  socket-timeout: 10000
+---
+
+spring:
+  profiles: prod
+server:
+  port: 8080
