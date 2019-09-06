@@ -7,7 +7,7 @@
 
 ### Done
 
-1) project structure with hardcoded response
+1) project structure with hardcoded response  
 2) Giphy response
 3) Dockerized
 
